@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "TRL_fixture_JLC04161H-7628-lib")(type "KiCad")(uri "${KIPRJMOD}/TRL_fixture_JLC04161H-7628-lib.kicad_sym")(options "")(descr ""))
+)
