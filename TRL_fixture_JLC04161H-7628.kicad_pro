@@ -103,7 +103,7 @@
         "silk_over_copper": "warning",
         "silk_overlap": "warning",
         "skew_out_of_range": "error",
-        "solder_mask_bridge": "error",
+        "solder_mask_bridge": "ignore",
         "starved_thermal": "error",
         "text_height": "warning",
         "text_thickness": "warning",
@@ -230,16 +230,7 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [
-      [
-        "power_pin_not_driven|571500|431800|987e60d2-c82e-4196-a29b-3f09239d1d85|00000000-0000-0000-0000-000000000000|/4e97b910-6914-46cc-a5cb-d9dbac4f26cd|/4e97b910-6914-46cc-a5cb-d9dbac4f26cd|",
-        ""
-      ],
-      [
-        "unconnected_wire_endpoint|736600|889000|635d6bc1-eb3a-4bfd-91a9-67f9753ac129|00000000-0000-0000-0000-000000000000|/4e97b910-6914-46cc-a5cb-d9dbac4f26cd||",
-        ""
-      ]
-    ],
+    "erc_exclusions": [],
     "meta": {
       "version": 0
     },
@@ -495,11 +486,18 @@
         "microvia_drill": 0.1,
         "name": "cls50_SE",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 0,
+        "priority": 1,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.35,
         "via_diameter": 0.6,
         "via_drill": 0.3
+      },
+      {
+        "clearance": 0.0,
+        "name": "clsSHORTED",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)"
       }
     ],
     "meta": {
@@ -507,6 +505,10 @@
     },
     "net_colors": null,
     "netclass_assignments": {
+      "/SHORT": [
+        "cls50_SE",
+        "clsSHORTED"
+      ],
       "Net-(J1-In)": [
         "cls50_SE"
       ],

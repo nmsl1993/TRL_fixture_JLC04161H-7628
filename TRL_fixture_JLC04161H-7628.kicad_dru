@@ -20,7 +20,11 @@
 # TODO new rule: non-plated slots: min diameter/width 1.0mm
 # JLCPCB: "The minimum Non-Plated Slot Width is 1.0mm, please draw the slot outline in the mechanical layer(GML or GKO)""
 
-
+# --- Custom rules for this project ---
+#(rule "Ignore solder mask bridging for 142-0761-861"
+#    (constraint solder_mask_clearance (min 0mm))
+#    (condition "A.insideCourtyard('TRL_fixture_JLC04161H-7628-lib:Johnson_142-0761-861') || B.insideCourtyard('TRL_fixture_JLC04161H-7628-lib:Johnson_142-0761-861')")
+#)
 # --- Drill/Hole Size ---
 
 (rule "JLCPCB: Drill Hole Size"

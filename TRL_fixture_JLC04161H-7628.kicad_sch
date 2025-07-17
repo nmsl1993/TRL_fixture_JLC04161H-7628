@@ -636,7 +636,7 @@
 		)
 		(uuid "f255f902-daad-4cc0-8591-248b42863a2c")
 	)
-	(text_box "Calculated the following using Saturn PCB Toolkit:\n- Targeting JLC04161H-7628, 50ohm single-ended L1->L2 reference uStrip\n- Prepreg thickness 0.2104mm w/ relative permitivitty = 4.4\n- 50ohm trace width = 0.35mm.\n- Effective permitivitty for uStrip is 3.1408\n- Velocity Factor is 0.564\n- 90deg line at 6GHz is 7.048mm\n- 90deg line at 1GHz is 42.29mm"
+	(text_box "Calculated the following using Saturn PCB Toolkit:\n- Targeting JLC04161H-7628, 50ohm single-ended L1->L2 reference uStrip\n- Prepreg thickness 0.2104mm w/ relative permitivitty = 4.4\n- 50ohm trace width = 0.35mm.\n- Effective permitivitty for uStrip is 3.1408\n- Velocity Factor is 0.564\n- 90deg line at 6GHz is 7.048mm ~> 7mm\n- 90deg line at 1GHz is 42.29mm ~> 42mm"
 		(exclude_from_sim no)
 		(at 116.84 53.34 0)
 		(size 93.98 91.44)
@@ -1005,6 +1005,47 @@
 			(type default)
 		)
 		(uuid "fd41a4d8-caf1-4150-9f4d-03f2449990ba")
+	)
+	(label "SHORT"
+		(at 66.04 63.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "551b6da6-aa01-4fef-b082-974f653853e1")
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 64.77 63.5 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "0d921be3-9eb9-4f8d-b491-96f8b73679de")
+		(property "Netclass" "clsSHORTED"
+			(at 65.4685 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Component Class" ""
+			(at 17.78 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
 	)
 	(netclass_flag ""
 		(length 2.54)
